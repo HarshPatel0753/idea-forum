@@ -4,13 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Idea extends Model
+class Comment extends Model
 {
-    protected $table = 'ideas';
+    protected $table = 'comments';
     protected $primaryKey = 'id';
-    protected $cast = [
-        'likes' => 'array',
-    ];
-
     protected $guarded = [];
 }

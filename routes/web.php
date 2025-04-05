@@ -20,5 +20,8 @@ Route::middleware('auth')->group(function() {
         Route::get('edit/{idea}',[IdeaController::class,'edit'])->name('edit');
         Route::post('create-or-update',[IdeaController::class,'createOrUpdate'])->name('create_or_update');
         Route::get('destroy/{idea}',[IdeaController::class,'destroy'])->name('destroy');
+        Route::get('view/{idea}',[IdeaController::class,'view'])->name('view');
+        Route::post('view/{idea}/like',[IdeaController::class,'like'])->name('like');
+        Route::post('view/{idea}/comment',[IdeaController::class,'comment'])->name('comment');
     });
 });

@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ideas', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('text');
+            $table->unsignedBigInteger('idea_id');
             $table->unsignedBigInteger('user_id');
-            $table->json('likes')->nullable();
+            $table->string('text');
             $table->timestamps();
 
+            $table->foreign('idea_id')->references('id')->on('ideas');
             $table->foreign('user_id')->references('id')->on('users');
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ideas');
+        Schema::dropIfExists('comments');
     }
 };

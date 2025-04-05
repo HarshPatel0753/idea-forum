@@ -31,7 +31,7 @@
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" value="12345678">
+                <input type="password" class="form-control" id="password" name="password" value="123456">
             </div>
             <button type="submit" class="btn btn-primary w-100">Login</button>
         </form>

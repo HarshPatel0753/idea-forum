@@ -16,9 +16,11 @@
 				<div class="d-flex justify-content-between border-bottom pb-2">
                     <label class="">{{ $idea->title }}</label>
                     <div>
+                        <a href="{{ route('idea.view', $idea->id) }}"><button type="button"
+                            class="btn btn-outline-primary btn-sm">View</button></a>
                         <a href="{{ route('idea.edit', $idea->id) }}"><button type="button"
                             class="btn btn-outline-success btn-sm">Edit</button></a>
-                    <a href="{{ route('idea.destroy', $idea->id) }}"><button type="button"
+                        <a href="{{ route('idea.destroy', $idea->id) }}"><button type="button"
                             class="btn btn-outline-danger btn-sm">Delete</button></a>
                     </div>
                 </div>

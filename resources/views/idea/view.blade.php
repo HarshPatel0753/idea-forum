@@ -9,16 +9,17 @@
     <div class="card">
         <div class="card-body">
             <div class="d-flex justify-content-between border-bottom pb-2">
-                <label>{{ $idea->title }}</label>
+                <label>Title: {{ $idea->title }}</label>
                 <form method="POST" action="{{ route('idea.like', $idea->id) }}">
                     @csrf
-                    <button type="submit" class="btn btn-outline-primary btn-sm">
-                        Likes {{ $likes }}
+                    <button type="submit" class="btn btn-outline-danger btn-sm">
+                        <i class="fas fa-heart fa-sm fa-fw mr-2 text-red-500"></i>
+                        {{ $likes }}
                     </button>
                 </form>
             </div>
             <div class="pt-2">
-                {{ $idea->text }}
+                Text: {{ $idea->text }}
             </div>
         </div>
     </div>

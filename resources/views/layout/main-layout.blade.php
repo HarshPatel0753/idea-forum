@@ -18,6 +18,32 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <style>
+        .logo-container {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 35px;
+            height: 35px;
+            background-color: #ffc107;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+
+        .brand-text {
+            color: #0a192f;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -25,7 +51,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @include('layout.Sidebar')
+        {{-- @include('layout.Sidebar') --}}
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">

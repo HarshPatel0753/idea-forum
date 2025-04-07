@@ -13,15 +13,34 @@
             </div>
         </div>
     </form> --}}
-
+    <a class="logo-container" href="{{ route('dashboard') }}">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a192f" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+            </svg>
+        </div>
+        <div class="brand-text">
+            IDEA<br>FORUM
+        </div>
+    </a>
+    <div class="ml-5">
+        <a href="{{ route('idea.index') }}">
+            <span>Idea</span></a>
+    </div>
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
-        <div id="cart_button" style="display: none">
+        {{-- <div id="cart_button" style="display: none">
             <button type="button" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#exampleModal"
                 onclick="showCartData()">
                 View Cart
             </button>
-        </div>
+        </div> --}}
         <div class="topbar-divider d-none d-sm-block"></div>
         <!-- Nav Item - User Information -->
         <li class="nav-item dropdown no-arrow">
